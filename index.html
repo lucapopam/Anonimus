@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonimus L</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="anonimus.webp" alt="Logo" style="height: 80px; width: auto; margin-right: 40px;">
+    </header>
+
+    <div class="section-container">
+        <div class="button-container">
+            <a href="pagina1.html">hacking</a><p></p>
+            <a href="pagina2.html">cursuri de hacking</a><p></p>
+            <a href="pagina3.html">blog</a><p></p>
+            <a href="pagina4.html">Ajutor</a>
+            <img src="download.png" alt="anonimus" style="height: 800px; width: auto; margin-left: 400px;">
+            <p>ANONIMUS SEMNAT L</p>
+        </div>
+        <script>
+            // Verifică dacă utilizatorul este autentificat și redirecționează către prima pagină
+            var loggedInUser = localStorage.getItem('loggedInUser');
+            if (loggedInUser) {
+                window.location.href = 'pagina1.html';
+            }
+        </script>
+</body>
+</html>
